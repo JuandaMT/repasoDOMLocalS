@@ -73,14 +73,5 @@ for (let persona of personas) {
   }
 }
 // 7
-/* ¿COMO SABER SI ES PRIMO?
-SI ES PAR NO ES PRIMO
-SI SE PUEDE DIVIDIR ENTRE UN NUM INFERIOR NO ES PRIMO */
 
-let numPrimo = 10;
-for (let num = numPrimo; num > 0; num--) {
-  if (num % 2 !== 0) {
-    let vecesDividido = 1;
-    
-  }
-}
+
