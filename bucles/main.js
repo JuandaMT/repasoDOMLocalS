@@ -67,11 +67,79 @@ for (let num of array) {
   }
 }
 // 6
+let personas = [];
 for (let persona of personas) {
   if (persona.edad > 18) {
     console.log(persona.nombre);
   }
 }
 // 7
+let num1 = 11;
+let num2 = num1;
+let resultado = "";
+for (let i = 0; i < num1; i++) {
+  num2--;
+  if (num1 % num2 == 0 && num2 != 1) {
+    resultado = "no es primo";
+    break;
+  } else {
+    resultado = "es primo";
+  }
+}
+console.log(resultado);
+// 8
+const animalesFel = [];
+for (let animal of animales) {
+  if (animal.edad > 4 && animal.especie == "Felino") {
+    animalesFel.push(animal);
+  }
+}
+console.log(animalesFel);
+// 9
+const animalesHer = [];
+for (let animal of animales) {
+  if (animal.edad % 2 == 0 && animal.especie == "Herbívoro") {
+    animalesHer.push(animal);
+  }
+}
+console.log(animalesHer);
+// 10
+const animalesOmnAves = [];
+for (let animal of animales) {
+  if (
+    animal.edad < 3 &&
+    (animal.especie == "Herbívoro" || animal.especie == "Ave")
+  ) {
+    animalesOmnAves.push(animal);
+  }
+}
+console.log(animalesOmnAves);
+// 11
+const animalesH = [];
+for (let animal of animales) {
+  if (animal.especie.startsWith("H")) {
+    animalesH.push(animal);
+  }
+}
+console.log(animalesH);
+// 12
+const animalesMasDeCuatro = [];
+for (let animal of animales) {
+  if (
+    animal.nombre.length > 4 &&
+    (animal.especie == "Felino" || animal.especie == " Herbívoro")
+  ) {
+    animalesMasDeCuatro.push(animal);
+  }
+}
+console.log(animalesMasDeCuatro);
 
-
+// FUNCTIONES
+// 13
+/* let array = [1, 1, 2, 2, 3, 3]
+let arraySinDuplicados = []
+function eliminarDuplicados(array){
+  for(let num of array){
+    if (num)
+  } */
+// }
