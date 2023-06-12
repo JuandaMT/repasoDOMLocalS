@@ -136,10 +136,30 @@ console.log(animalesMasDeCuatro);
 
 // FUNCTIONES
 // 13
-/* let array = [1, 1, 2, 2, 3, 3]
-let arraySinDuplicados = []
-function eliminarDuplicados(array){
-  for(let num of array){
-    if (num)
-  } */
-// }
+const parametrosRepetidos = [1, 1, 2, 2, 3, 3];
+
+/* function sinDuplicados(parametrosRepetidos) {
+  const nuevosElementos = [];
+  for(let elemento of parametrosRepetidos){
+    if(!nuevosElementos.includes(elemento)){
+      nuevosElementos.push(elemento);
+    }
+  }
+  return nuevosElementos;
+}
+console.log(sinDuplicados(parametrosRepetidos)) */
+
+const sinDuplicados = (array) => {
+  const nuevosElementos = [];
+  for(let elemento of array){
+    if(!nuevosElementos.includes(elemento)){
+      nuevosElementos.push(elemento);
+    }
+  }
+  return nuevosElementos;
+}
+console.log(sinDuplicados(parametrosRepetidos))
+// 12
+function sumarElementos(){
+
+}
