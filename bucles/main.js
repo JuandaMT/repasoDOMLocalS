@@ -151,15 +151,49 @@ console.log(sinDuplicados(parametrosRepetidos)) */
 
 const sinDuplicados = (array) => {
   const nuevosElementos = [];
-  for(let elemento of array){
-    if(!nuevosElementos.includes(elemento)){
+  for (let elemento of array) {
+    if (!nuevosElementos.includes(elemento)) {
       nuevosElementos.push(elemento);
     }
   }
   return nuevosElementos;
-}
-console.log(sinDuplicados(parametrosRepetidos))
+};
+console.log(sinDuplicados(parametrosRepetidos));
 // 12
-function sumarElementos(){
-
+function sumarElementos(array) {
+  let acumulador4 = 0;
+  for (let numero of array) {
+    acumulador4 += numero;
+  }
+  return console.log(acumulador4);
 }
+sumarElementos(parametrosRepetidos);
+// 13
+const contarCaracteres = (cadena) => {
+  let acumulador = 0;
+  for (let letra of cadena) {
+    acumulador += letra.length;
+  }
+  console.log(acumulador);
+};
+
+contarCaracteres(["Hola", "Mundo"]);
+// 14
+const numeroMasGrande = (array) => {
+  let arrayOrdenada = array.sort(function (a, b) {
+    return a - b;
+  });
+  // console.log(arrayOrdenada)
+  return console.log(arrayOrdenada.slice(-1));
+};
+numeroMasGrande([1, 10, 3, 4, 5]);
+// 15
+/* const cadenaMasLarga = (array) => {
+  for(let valor of array){
+    console.log(valor.length)
+    if (cadena.length > cadenaLarga.length) {
+      cadenaLarga = cadena;
+    }
+  }
+};
+cadenaMasLarga(["JavaScript", "es", "genial"]) */
